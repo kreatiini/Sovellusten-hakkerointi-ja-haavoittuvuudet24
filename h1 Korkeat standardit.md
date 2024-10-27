@@ -26,7 +26,11 @@ ISO 27034 kokonaisuus antaa ohjenuorat sovellusten tietoturvaan. Niin suunnittel
    
 3. **Automaatiotestaus on ohjelmistotietoturvan kannalta erittäin tärkeää:** Uskon tämän olevan tärkeää, vaikkakin se monimutkaistaa työvaiheita. Eikä siihen voi luottaa sokeasti.
    
-4. **Ohjelmistoa suunniteltaessa voidaan tehdä paljonkin auttamaan käyttäjää toimimaan tietoturvallisesti. Usein kuitenkin nämä toimenpiteet vaikuttavat negatiivisesti:** Suunniteltaessa voidaan tehdä paljon ominaisuuksia jotka auttavat käyttäjää toimimaan tietoturvallisesti. Sillä voidaan kuitenkin heikentää myös käyttäjän tietoturvaa sillä laiskat käyttäjät eivät jaksa noudattaa näitä ohjeita. 
+4. **Ohjelmistoa suunniteltaessa voidaan tehdä paljonkin auttamaan käyttäjää toimimaan tietoturvallisesti. Usein kuitenkin nämä toimenpiteet vaikuttavat negatiivisesti:** Suunniteltaessa voidaan tehdä paljon ominaisuuksia jotka auttavat käyttäjää toimimaan tietoturvallisesti. Sillä voidaan kuitenkin heikentää myös käyttäjän tietoturvaa sillä laiskat käyttäjät eivät jaksa noudattaa näitä ohjeita.
+
+5. **Ohjelmiston tietoturvallisuuden suunnitteluun vaikuttaa paljolti se, kuinka arkaluonteisia tietoja ohjelmistolla on tarkoitus käsitellä:** Tämä väittämä pitää varmasti paikkansa vaikka se onkin tärkeää kaikkialla.
+
+6. **Ohjelmistokehittäjät näkevät omat ohjelmistonsa aina merkittävästi riskialttiimpina, kuin muiden tekemät ohjelmistot:** Ei ole tästä omakohtaista kokemusta. Ajattelisin kuitenkin että oman sovelluksen rakenteesta on aina paremmin perillä. Näin myös osaa ajatella siihen liittyviä riskejä. Todennäköisesti riskit on myös jo etukäteen mietitty.
 
 **Lähteet:** Meurman 2021: Laatulöpinät 30: Tietoturvallisuus ohjelmistokehityksessä. Kuunneltavissa: https://www.arter.fi/podcast/laatulopinat-podcast-tietoturvallisuus-ohjelmistokehityksessa-tarkastele-kokonaisuutta-ja-hyodynna-viitekehykset/ kuunneltu: 27.10.2024
 
