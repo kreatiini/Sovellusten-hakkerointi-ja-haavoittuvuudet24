@@ -49,15 +49,34 @@ Tähän tulee tiivistelmä
 Tehtävän lähteet tähän
 
 ## a) 010-staff-only
+Tämän tehtävän ehdin jo ratkaisemaan ennen tehtävänantoa kotitehtäväksi. Tehtävä oli kuitenkin looginen SQL-injektio kuten harjoitustehtävät ennen tätä. Jouduin perehtymään vähän paremmin SQL-injektion maailmaan mutta onnistuin ratkaisemaan tehtävän. Kokeilin ensin kaikenlaisia muotoja kunnes osuin oikeaan. Laitan tähän kuvankaappauksen muistiinpanoista jotka tein tehtävää tehdessä:
+
+![image](https://github.com/user-attachments/assets/ae513954-00f4-4527-a256-612c8d65752e)
+
+Eli tutkailin erilaisilla injektioilla. Päättelin 1. ja 2. Salasanan näiden SQL-komentojen avulla. Ajattelin siis että selvitän seuraavan salasanan saadakseni mahdollisen admin salasanan jonka sainkin. Sain sen komennolla `' OR 1=1 LIMIT 2,1 --` ja vastaus oli ` SUPERADMIN%%rootALL-FLAG{Tero-e45f8764675e4463db969473b6d0fcdd}`
 
 ### Lähteet:
 Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
+Portswigger: What is SQL Injection. Luettavissa: https://portswigger.net/web-security/sql-injection#examining-the-database Luettu 30.10.2024
+W3Schools: SQL Comments. Luettavissa: https://www.w3schools.com/sql/sql_comments.asp Luettu 30.10.2024
 
 ## b) 010-staff-only, this time for real
+En juurikaan muista mitä tein tälle tehtävälle. Olin jotain kirjoittanut itselleni muistiin. Riviltä 19 eteenpäin muutin niin että pin ei ole suora syöte.
+
+![image](https://github.com/user-attachments/assets/349e7d29-50a7-4bed-91fb-4851d668f449)
+
+Testatessa se toimii nyt oikein. Ainakaan aiemmin toiminut SQL-Lause ei toimi. Oma pin-koodi kuitenkin antaa oikean vastauksen. Myös Adminin pin-koodi antaa oikean vastauksen.
+
+![image](https://github.com/user-attachments/assets/47ab9b32-854b-448a-8ded-d6a0eb9dba8e)
+
+![image](https://github.com/user-attachments/assets/30529c15-b76f-42bc-a3d7-2743b629f29e)
+
+![image](https://github.com/user-attachments/assets/9e35a3e0-569a-4b89-b7ac-e301743e66de)
+
 
 ### Lähteet:
 Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
-
+Benita: Preventing SQL Injection Attacks With Python. Luettavissa: https://realpython.com/prevent-python-sql-injection/ Luettu 29.11.2024
 ## c) dirfuzt-1
 Olin jo aiemmin asentanut ffufin valmiiksi [Teron ohjeiden](https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/) mukaan. Olin myös jo tehnyt valmiiksi ensimmäisen dirfutz-0 tehtävän. Tämä tehtävä oli siis helppo ratkaista. Latasin paketin ja laitoin sen käyttöön. Etusivu näytti tältä:
 
