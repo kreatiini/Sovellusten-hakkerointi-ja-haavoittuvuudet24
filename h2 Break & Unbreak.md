@@ -1,7 +1,7 @@
 # h2 Break & Unbreak
 
 ## Tiivistelmä tehtävästä, tehtävänanto ja oman tietokoneen tiedot
-Tähän tulee tiivistelmä 
+Nyt pääsimme käsiksi tehtäviin. Itse murtautumistehtävät eivät olleet niin haasteellisia vaikka jouduinkin hakemaan verkosta tietoa. Koodin korjaaminen oli paljon hankalampaa. Tehtävät onnistuivat kuitenkin hyvin. 
 
 ### Tehtävänanto:
 **x)** Lue/katso/kuuntele ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
@@ -44,9 +44,41 @@ Tähän tulee tiivistelmä
 - Kernel: Linux 6.1.0-25-amd64
 
 ## x) Lue ja tiivistä
+### OWASP: OWASP Top 10: A01 Broken Access Control
+- Ongelma jossa oikeudet sallitaan kaikille vaikka ei pitäisi
+- Mahdollisuus katsoa esim jonkun toisen käyttäjän tietoja
+- Mahdollisuus ohittaa tarkastukset syöttämällä tietoja URL kenttään
+- Oikeuksien korotus, toimitaan esim. admininina ilman admin käyttäjää
+- Metadatan manipulointi
+  
+### Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf
+- Ffuffilla voidaan fuzzata esim. hakemistoja
+- Kannattaa irroittaa laite verkosta käytön ajaksi sillä se lähettää paljon pyyntöjä
+- ffufin kanssa käytetään tekstitiedostoja jotka sisältävät tarittavia avainsanoja
+- Kannattaa ensin hakea ilman suodatusta, tämän jälkeen suodattaa vain mielenkiintoiset näkyviin
+### PortSwigger: Access control vulnerabilities and privilege escalation
+- Authentication: Varmistetaan käyttäjän todellinen henkilöllisyys
+- Session management: Tunnistetaan mitkä HTTP pyynnöt tulevat samalt käyttäjältä
+- Access control: Päättää saako käyttäjä tehdä asian mitä on tekemässä
+- Vertical Access Control: mekanismit jotka rajoittavat joidenkin käyttäjien pääsyä arkaluontoisiin toimintoihin
+- Horizontal Access Control: mekanismit jotka rajoittavat joidenkin resurssien saatavuutta vain tietyille käyttäjille
+- Context-Dependent access control: Rajaa käyttäjän pääsyä toimintoihin tai resursseihin tilanteesta riippuen
+- Vertical privilege escalation: Jos käyttäjä pystyy käyttämään toiminnallisuutta johon ei kuulu olla pääsyä.
+- Horizontal privilege escalation: Jos käyttäjä saa pääsyn jonkun toisen henkilön resursseihin, omien sijaan
+- Tapoja välttää näitä: Estä pääsy lähtökohtaisesti jos ei tarvetta sallia, käytä yhtä ja samaa mekanismia pääsynhallintaan jos mahdollista, auditoi ja testaa
+  
+### Karvinen 2006: Raportin kirjoittaminen
+
+-  Raporttia kirjoittaessa on tärkeää merkata kaikki vaiheet sekä tehdyt toimenpiteet ylös
+-  Raporttia kirjoitettaessa on viitattava lähteisiin
+-  Raportin on oltava selkeästi jäsennelty ja kirjoitusasun täytyy olla siistiä
+-  Raportissa ei saa väittää tehneensä testejä joita ei ole tehnyt
 
 ### Lähteet:
-Tehtävän lähteet tähän
+Karvinen 2006: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 1.11.2024
+Portswigger: Access control vulnerabilities and privilege escalation. Luettavissa: https://portswigger.net/web-security/access-control Luettu 1.11.2024
+Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/ Luettu 1.11.2024
+OWASP: OWASP Top 10: A01 Broken Access Control Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/ Luettu: 1.11.2024
 
 ## a) 010-staff-only
 Tämän tehtävän ehdin jo ratkaisemaan ennen tehtävänantoa kotitehtäväksi. Tehtävä oli kuitenkin looginen SQL-injektio kuten harjoitustehtävät ennen tätä. Jouduin perehtymään vähän paremmin SQL-injektion maailmaan mutta onnistuin ratkaisemaan tehtävän. Kokeilin ensin kaikenlaisia muotoja kunnes osuin oikeaan. Laitan tähän kuvankaappauksen muistiinpanoista jotka tein tehtävää tehdessä:
@@ -149,4 +181,14 @@ Django documentation. Luettavissa: https://docs.djangoproject.com/en/5.1/topics/
 Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
 
 ## Lähteet:
-   Kaikki lähteet yhteen tähän
+- Karvinen 2006: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 1.11.2024
+- Portswigger: Access control vulnerabilities and privilege escalation. Luettavissa: https://portswigger.net/web-security/access-control Luettu 1.11.2024
+- Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/ Luettu 1.11.2024
+- OWASP: OWASP Top 10: A01 Broken Access Control Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/ Luettu: 1.11.2024
+- Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
+- Portswigger: What is SQL Injection. Luettavissa: https://portswigger.net/web-security/sql-injection#examining-the-database Luettu 30.10.2024
+- W3Schools: SQL Comments. Luettavissa: https://www.w3schools.com/sql/sql_comments.asp Luettu 30.10.2024
+- Benita: Preventing SQL Injection Attacks With Python. Luettavissa: https://realpython.com/prevent-python-sql-injection/ Luettu 29.11.2024
+- Loami Barbosa Dos Santos: ffuf Luettavissa: https://linuxcommandlibrary.com/man/ffuf Luettu: 1.11.2024
+- Django documentation. Luettavissa: https://docs.djangoproject.com/en/5.1/topics/auth/default/ Luettu: 1.11.2024
+- Tehtävät perustuvat Tero Karvisen ja Lari Iso-Anttilan kurssiin Sovellusten hakkerointi ja haavoittuvuudet: https://terokarvinen.com/application-hacking/
