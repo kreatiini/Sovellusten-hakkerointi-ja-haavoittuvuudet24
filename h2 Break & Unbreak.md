@@ -75,10 +75,10 @@ Nyt pääsimme käsiksi tehtäviin. Itse murtautumistehtävät eivät olleet nii
 -  Raportissa ei saa väittää tehneensä testejä joita ei ole tehnyt
 
 ### Lähteet:
-Karvinen 2006: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 1.11.2024
-Portswigger: Access control vulnerabilities and privilege escalation. Luettavissa: https://portswigger.net/web-security/access-control Luettu 1.11.2024
-Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/ Luettu 1.11.2024
-OWASP: OWASP Top 10: A01 Broken Access Control Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/ Luettu: 1.11.2024
+- Karvinen 2006: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 1.11.2024
+- Portswigger: Access control vulnerabilities and privilege escalation. Luettavissa: https://portswigger.net/web-security/access-control Luettu 1.11.2024
+- Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/ Luettu 1.11.2024
+- OWASP: OWASP Top 10: A01 Broken Access Control Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/ Luettu: 1.11.2024
 
 ## a) 010-staff-only
 Tämän tehtävän ehdin jo ratkaisemaan ennen tehtävänantoa kotitehtäväksi. Tehtävä oli kuitenkin looginen SQL-injektio kuten harjoitustehtävät ennen tätä. Jouduin perehtymään vähän paremmin SQL-injektion maailmaan mutta onnistuin ratkaisemaan tehtävän. Kokeilin ensin kaikenlaisia muotoja kunnes osuin oikeaan. Laitan tähän kuvankaappauksen muistiinpanoista jotka tein tehtävää tehdessä:
@@ -88,9 +88,9 @@ Tämän tehtävän ehdin jo ratkaisemaan ennen tehtävänantoa kotitehtäväksi.
 Eli tutkailin erilaisilla injektioilla. Päättelin 1. ja 2. Salasanan näiden SQL-komentojen avulla. Ajattelin siis että selvitän seuraavan salasanan saadakseni mahdollisen admin salasanan jonka sainkin. Sain sen komennolla `' OR 1=1 LIMIT 2,1 --` ja vastaus oli ` SUPERADMIN%%rootALL-FLAG{Tero-e45f8764675e4463db969473b6d0fcdd}`
 
 ### Lähteet:
-Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
-Portswigger: What is SQL Injection. Luettavissa: https://portswigger.net/web-security/sql-injection#examining-the-database Luettu 30.10.2024
-W3Schools: SQL Comments. Luettavissa: https://www.w3schools.com/sql/sql_comments.asp Luettu 30.10.2024
+- Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
+- Portswigger: What is SQL Injection. Luettavissa: https://portswigger.net/web-security/sql-injection#examining-the-database Luettu 30.10.2024
+- W3Schools: SQL Comments. Luettavissa: https://www.w3schools.com/sql/sql_comments.asp Luettu 30.10.2024
 
 ## b) 010-staff-only, this time for real
 En juurikaan muista mitä tein tälle tehtävälle. Olin jotain kirjoittanut itselleni muistiin. Riviltä 19 eteenpäin muutin niin että pin ei ole suora syöte.
@@ -107,8 +107,8 @@ Testatessa se toimii nyt oikein. Ainakaan aiemmin toiminut SQL-Lause ei toimi. O
 
 
 ### Lähteet:
-Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
-Benita: Preventing SQL Injection Attacks With Python. Luettavissa: https://realpython.com/prevent-python-sql-injection/ Luettu 29.11.2024
+- Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
+- Benita: Preventing SQL Injection Attacks With Python. Luettavissa: https://realpython.com/prevent-python-sql-injection/ Luettu 29.11.2024
 ## c) dirfuzt-1
 Olin jo aiemmin asentanut ffufin valmiiksi [Teron ohjeiden](https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/) mukaan. Olin myös jo tehnyt valmiiksi ensimmäisen dirfutz-0 tehtävän. Tämä tehtävä oli siis helppo ratkaista. Latasin paketin ja laitoin sen käyttöön. Etusivu näytti tältä:
 
@@ -129,7 +129,7 @@ Kokeilin myös muut tulokset ja myös `.git` tuloksilla lippu tuli näkyviin. Er
 
 ### Lähteet:
 
-Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/. Luettu 1.11.2024
+- Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/. Luettu 1.11.2024
 
    
 ## d) 020-your-eyes-only
@@ -150,9 +150,9 @@ Kirjautuneena sisään sain seuraavanlaisen sivun auki:
 
 
 ### Lähteet:
-Loami Barbosa Dos Santos: ffuf Luettavissa: https://linuxcommandlibrary.com/man/ffuf Luettu: 1.11.2024
-Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/. Luettu 1.11.2024
-Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
+- Loami Barbosa Dos Santos: ffuf Luettavissa: https://linuxcommandlibrary.com/man/ffuf Luettu: 1.11.2024
+- Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/. Luettu 1.11.2024
+- Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
 
 ## 020-your-eyes-only, hopefully
 Seuraavana lähdin tutustumaan ohjelman koodiin. Nämä tehtävät ovat minulle haasteellisempia. Ymmärrän ohjelmoinnin perusasiat. Nämä tehtävät tuntuvat hieman edistyneemmiltä. Selailin koodia ja löysin tämän:
@@ -177,8 +177,8 @@ Eli ainakaan sivulle ei pysty nyt siirtymään. Sivu kuitenkin löytyy ffufin av
 
 
 ### Lähteet:
-Django documentation. Luettavissa: https://docs.djangoproject.com/en/5.1/topics/auth/default/ Luettu: 1.11.2024
-Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
+- Django documentation. Luettavissa: https://docs.djangoproject.com/en/5.1/topics/auth/default/ Luettu: 1.11.2024
+- Karvinen 2023: Hack'n Fix Luettavissa: https://terokarvinen.com/hack-n-fix/ Luettu 1.11.2024
 
 ## Lähteet:
 - Karvinen 2006: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 1.11.2024
