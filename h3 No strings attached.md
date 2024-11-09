@@ -33,12 +33,16 @@ Mckay 2019: How to Use the strings Command on Linux. Luettavissa: https://www.ho
 Iso-Anttila, Karvinen 2024: Application Hacking. Luettavissa: https://terokarvinen.com/application-hacking/ Luettu: 8.11.2024
 
 ## b) You shall not passtr.c (**Rannekello 0833 8.11.2024**)
-Seuraavana piti muokata `passtr.c` koodia niin että strings komennolla ei pysty purkamaan suoraan salasanaa. C-kieli on uusi itselleni joten jouduin hieman perehtymään asiaan. Nyt muihin menoihin **0845 8.11.2024**
-
+Seuraavana piti muokata `passtr.c` koodia niin että strings komennolla ei pysty purkamaan suoraan salasanaa. C-kieli on uusi itselleni joten jouduin hieman perehtymään asiaan. Nyt lopetan tältä erää. **0845 8.11.2024**
+Palasin asiaan  **2055 09112024**. Olin jo selaillut päivän mitä eri tapoja piilottaa salasana C- kielessä löytyy. Kaikki ohjeet mitä verkosta löytyivät olivat todella vaikeita. Jonkinlainen 
 ### Lähteet:
 Tehtävän lähteet tähän
 
-## tehtävä3
+## c) packd
+Aloitin tämän tehtävän ratkomisen samalla tyylillä kuin ensimmäisen. Ajoin `strings packd | less` ja silmäilin tulokset läpi. 
+Tulokset näyttävät esim. Tältä joten kokeilen `piilos-An` salasanaa, mutta se ei toiminut. :
+![image](https://github.com/user-attachments/assets/d49d504a-928f-4f7f-a4b4-543fcb0e62ba)
+Katselin rivejä ja mietin olisiko tehtävässä käytetty jonkinlaista salakirjoitusta. En kuitenkaan keksinyt mitään tapaa lähteä purkamaan sitä. 
 
 ### Lähteet:
 Tehtävän lähteet tähän
