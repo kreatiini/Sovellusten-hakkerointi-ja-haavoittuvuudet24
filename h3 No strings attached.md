@@ -48,6 +48,9 @@ Katselin rivejä ja mietin olisiko tehtävässä käytetty jonkinlaista salakirj
 
 Kokeilin syöttää sen ja toimii: 
 
+![image](https://github.com/user-attachments/assets/0ce244ea-617f-4bee-aaca-eb25244569dd)
+
+Joten totean tehtävän tehdyksi. Kokonaisuutena luovutin jo heti aluksi, aloin pohtimaan jonkinlaista salakirjoitusta. Palattuani seuraavana päivänä päätin vain purkaa paketin. 
 
 ### Lähteet:
 Tehtävän lähteet tähän
