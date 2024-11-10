@@ -42,7 +42,12 @@ Tehtävän lähteet tähän
 Aloitin tämän tehtävän ratkomisen samalla tyylillä kuin ensimmäisen. Ajoin `strings packd | less` ja silmäilin tulokset läpi. 
 Tulokset näyttävät esim. Tältä joten kokeilen `piilos-An` salasanaa, mutta se ei toiminut. :
 ![image](https://github.com/user-attachments/assets/d49d504a-928f-4f7f-a4b4-543fcb0e62ba)
-Katselin rivejä ja mietin olisiko tehtävässä käytetty jonkinlaista salakirjoitusta. En kuitenkaan keksinyt mitään tapaa lähteä purkamaan sitä. 
+Katselin rivejä ja mietin olisiko tehtävässä käytetty jonkinlaista salakirjoitusta. En kuitenkaan keksinyt mitään tapaa lähteä purkamaan sitä. Löysin strings komennolla tiedostoja joihin viitattiin. `.c` ja `.o` loppuisia. Tekstissä mainittiin UPX ja selvitin että sillä on tiivistetty ohjelma. Päätin ladata sen jos saisin purettua ohjelman. Asennettuani `upx` sovelluksen purin paketin komennolla `upx -d packd`. Tämän jälkeen kokeilin ajaa `strings packd` uudestaan. Tällä kertaa löysin rivin:
+
+![image](https://github.com/user-attachments/assets/a68d4665-667f-46eb-b5ff-3e5153a50535)
+
+Kokeilin syöttää sen ja toimii: 
+
 
 ### Lähteet:
 Tehtävän lähteet tähän
