@@ -1,10 +1,13 @@
-# TEHTÄVÄ
+# H3 No strings attached
 
 ## Tiivistelmä tehtävästä, tehtävänannot ja oman tietokoneen tiedot
-Tähän tulee tiivistelmä 
+Tehtävässä piti kaivaa pari salasanaa C-kielellä kirjoitetuista ohjelmista ja korjata koodia. Sain ratkaistua salasanat, en kuitenkaan onnistunut korjaamaan koodia b. Kohdassa.
 
 ### Tehtävänanto:
-   Tähän tulee tehtävänanto
+-  a) Strings. Lataa ezbin-challenges.zip Aja 'passtr'. Selvitä oikea salasana 'strings' avulla. Selvitä myös lippu. (Ensisijaisesti katsomatta sorsia, jos osaat.)
+-  b) Tee passtr.c -ohjelmasta uusi versio, jossa salasana ei näy suoraan sellaisenaan binääristä. Osoita testillä, että salasana ei näy. (Obfuskointi riittää.)
+-  c) Packd. Aja 'packd' paketista ezbin-challenges.zip. Mikä on salasana? Mikä on lippu? (Tämä tehtävä on hieman haastavampi. Kirjaa ylös kokeilemasi lähestymistavat ja keksimäsi hypoteesit. Toivottavasti pääset itse maaliin, mutta jos et, läpikävely paljastuu tunnilla...)
+- d) Vapaaehtoinen bonus: Cryptopals. Crypto Challenge Set 1. Tätä voi tehdä useamman viikon bonuksena. Jos saat ratkaistua kohdat 1 .. "4. Detect single-character XOR", olet jo astunut salakirjoituksen maailmaan.
   
 ### Tietokoneen tiedot: 
 - Näytönohjain: Asus GeForce RTX 3070 Ti ROG Strix - OC Edition
@@ -29,14 +32,19 @@ Tästä voin päätellä että salasana on `sala-hakkeri-321` ja lippu on `FLAG{
 
 ja sehän toimii.
 ### Lähteet:
-Mckay 2019: How to Use the strings Command on Linux. Luettavissa: https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/ Luettu: 8.11.2024
-Iso-Anttila, Karvinen 2024: Application Hacking. Luettavissa: https://terokarvinen.com/application-hacking/ Luettu: 8.11.2024
+- Mckay 2019: How to Use the strings Command on Linux. Luettavissa: https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/ Luettu: 8.11.2024
+- Iso-Anttila, Karvinen 2024: Application Hacking. Luettavissa: https://terokarvinen.com/application-hacking/ Luettu: 8.11.2024
 
 ## b) You shall not passtr.c (**Rannekello 0833 8.11.2024**)
 Seuraavana piti muokata `passtr.c` koodia niin että strings komennolla ei pysty purkamaan suoraan salasanaa. C-kieli on uusi itselleni joten jouduin hieman perehtymään asiaan. Nyt lopetan tältä erää. **0845 8.11.2024**
-Palasin asiaan  **2055 09112024**. Olin jo selaillut päivän mitä eri tapoja piilottaa salasana C- kielessä löytyy. Kaikki ohjeet mitä verkosta löytyivät olivat todella vaikeita. Jonkinlainen 
+Palasin asiaan  **2055 09112024**. Olin jo selaillut päivän mitä eri tapoja piilottaa salasana C- kielessä löytyy. Kaikki ohjeet mitä verkosta löytyivät olivat todella vaikeita. 
+Tehtyäni c) tehtävän päätin pakata tiedoston `UPX` ohjelmalla. Näin strings antaa seuraavan tuloksen:
+
+![image](https://github.com/user-attachments/assets/eee28c3a-05f2-413c-8cf6-a3c2a7e3d7ad)
+
+Näin salasana ja lippu näkyy joten ei tämäkään korjannut ongelmaa. Toki ne näkyy hieman epäselvemmin. 
 ### Lähteet:
-Tehtävän lähteet tähän
+- Karvinen 2024: h3 no strings attached. Luettavissa: https://terokarvinen.com/application-hacking/#h3-no-strings-attached Luettu 10.11.2024
 
 ## c) packd
 Aloitin tämän tehtävän ratkomisen samalla tyylillä kuin ensimmäisen. Ajoin `strings packd | less` ja silmäilin tulokset läpi. 
@@ -53,22 +61,10 @@ Kokeilin syöttää sen ja toimii:
 Joten totean tehtävän tehdyksi. Kokonaisuutena luovutin jo heti aluksi, aloin pohtimaan jonkinlaista salakirjoitusta. Palattuani seuraavana päivänä päätin vain purkaa paketin. 
 
 ### Lähteet:
-Tehtävän lähteet tähän
-
-## tehtävä3
-
-### Lähteet:
-Tehtävän lähteet tähän
-   
-## tehtävä4
-
-### Lähteet:
-Tehtävän lähteet tähän
-
-## tehtävä5
-
-### Lähteet:
-Tehtävän lähteet tähän
+- UPX Man Page: https://linux.die.net/man/1/upx Luettu 10.11.2024
 
 ## Lähteet:
-   Kaikki lähteet yhteen tähän
+   - Iso-Anttila, Karvinen 2024: Application Hacking. Luettavissa: https://terokarvinen.com/application-hacking/ Luettu: 8.11.2024
+   - UPX Man Page: https://linux.die.net/man/1/upx Luettu 10.11.2024
+   - Karvinen 2024: h3 no strings attached. Luettavissa: https://terokarvinen.com/application-hacking/#h3-no-strings-attached          Luettu 10.11.2024
+   - Mckay 2019: How to Use the strings Command on Linux. Luettavissa: https://www.howtogeek.com/427805/how-to-use-the-strings-command-on-linux/ Luettu: 8.11.2024
