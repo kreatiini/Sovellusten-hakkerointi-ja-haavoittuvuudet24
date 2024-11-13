@@ -46,11 +46,25 @@ Tähän tulee tiivistelmä
 ## a) Asenna Ghidra
 Asensin Ghidran jo oppitunnilla:
 
+![image](https://github.com/user-attachments/assets/a9b8b57b-c34a-4efd-a930-f8ca9b5b1701)
+
 
 ### Lähteet:
 Tehtävän lähteet tähän
 
-## tehtävä2
+## b) rever-c
+Tehtävässä piti käänteismallintaa Ghidra C-kielelle ja selittää ohjelman toimintaa.
+Aloitin tekemällä uuden projektin ja siirtämällä `packd` ohjelman Ghidraan. Tämän jälkeen avasin sen ja valitsin "Analyze now". Pääsin seuraavaan näkymään:
+
+![image](https://github.com/user-attachments/assets/0e39c963-680d-49d4-af1c-48441f9ca85f)
+
+Ensin muistelin Ghidran käyttöä, klikkailin valikoita ja yritin hahmotella mitä näkyy. Löysin kohdan jossa luki `main` ja klikkaamalla sitä sain seuraavanlaisen näkymän:
+
+![image](https://github.com/user-attachments/assets/3507b13e-078d-44a9-ae7b-75f690bb74a3)
+
+Tässä siis näkyi `main()` funktio. Aloin purkamaan funktiota osiin ja nimeämään sitä. 
+Datatyyppi oli määrittämättä mutta katsomalla funktion loppua ja koska C- kielessä `main()` on datatyyppiä `int` laitoin tyypiksi `int`. En nimennyt `main()` funktiota uudestaan koska mielestäni se on hyvin kuvaava. 
+Koodissa oli nimettynä kaksi muuttujaa: `int ivar1` ja `char local_28 [32]`. 
 
 ### Lähteet:
 Tehtävän lähteet tähän
