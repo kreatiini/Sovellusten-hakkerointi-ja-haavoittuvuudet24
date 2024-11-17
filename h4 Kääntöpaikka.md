@@ -149,7 +149,7 @@ Seuraavana avasin ohjelman Ghidrassa ja aloin tutkailemaan pääfunktiota. Ensin
 Käytin verkosta löytyvää muuntajaa ensin `password1` ascii arvoihin ja vähensin yhden jokaisesta kirjaimesta ja käänsin takaisin. Sain seuraavan o`rrvnqc0 jota kokeilin. Sain kuitenkin vain aikaan tämän:
 ![image](https://github.com/user-attachments/assets/a885c1f3-c33e-4c77-a2f7-9164c6bd37fc)
 
-Päättelin että erikoismerkki tekee taas temppuja ja käytin \ viivaa:
+Ajattelin että erikoismerkki tekee taas temppuja ja käytin \ viivaa:
 
 ![image](https://github.com/user-attachments/assets/a7e91c21-9e0e-4b7c-b11d-2859658ce5fe)
 
@@ -159,4 +159,4 @@ Muissa tehtävissä en käyttänyt paljoa aikaa. Otin kuvan puhelimeeni koodista
 - https://www.unit-conversion.info/texttools/ascii/
 
 ## Lähteet:
-   Kaikki lähteet yhteen tähän
+   - Iso-Anttila, Karvinen 2024: Application Hacking. Luettavissa: https://terokarvinen.com/application-hacking/ Luettu: 8.11.2024
