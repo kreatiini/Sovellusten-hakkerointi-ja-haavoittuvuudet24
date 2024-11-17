@@ -66,15 +66,29 @@ Tässä siis näkyi `main()` funktio. Aloin purkamaan funktiota osiin ja nimeäm
 Datatyyppi oli määrittämättä mutta katsomalla funktion loppua ja koska C- kielessä `main()` on datatyyppiä `int` laitoin tyypiksi `int`. En nimennyt `main()` funktiota uudestaan koska mielestäni se on hyvin kuvaava. 
 Koodissa oli nimettynä kaksi muuttujaa: `int ivar1` ja `char local_28 [32]`. 
 
-### Lähteet:
-Tehtävän lähteet tähän
+### Koodin toiminta
+1. Ohjelma käynnistyy
+2. Kysyy syötteen
+3. Lukee syötteen
+4. Vertaa muuttujaa oikeaan merkkijonoon `piilos-AnAnAs`
+5. Mikäli merkkijono täsmää tulostuu `"Yes! That\'s the password. FLAG{Tero-0e3bed0a89d8851da933c64fefad4ff2}"`
+6. Muuten: `Sorry, no bonus.`
 
-## tehtävä3
+![image](https://github.com/user-attachments/assets/cd3f8e5a-4e11-4418-af70-8153b78b7db5)
 
-### Lähteet:
-Tehtävän lähteet tähän
 
-## tehtävä3
+## c) Jos väärinpäin
+
+Aloitin tehtävän kopioimalla passtr ohjelman Ghidraan. `main()` funktio löytyi nopeasti ja päättelemällä selvisi että `ivar1 == 0` tarkoittaa että salasana on oikein. Klikkaamalla if lauseketta näin assembly puolelta missä kohdassa tämä tapahtuu. Sieltä löytyi `JNZ` eli jump if non zero joka hyppää else lausekkeeseen. Vaihdoin tyypiksi `JZ` eli jump if zero joka käänsi lausekkeen ympäri. Valitsin "Export file" ja tiedostomuodoksi "Original file". Tämän jälkeen avasin kohdehakemiston ja tein ajettavan `chmod u+x passtr`. Sen jälkeen testit toimivat näin:
+
+ ![image](https://github.com/user-attachments/assets/410947ab-eb87-46a6-9eeb-4fd07abe7428)
+
+ ![image](https://github.com/user-attachments/assets/4f996eff-b30e-49ce-83d8-4f77452f90c3)
+
+
+## d) Crackme binääriin
+Latasin ensin kaikki tiedostot zippinä ja purin `unzip master.zip`. Tämän jälkeen ohjeen mukaan laitoin `make crackme01` ja sain tiedoston `crackme01.64`. Päätin purkaa kaikki kerralla joten ajoin pelkän `make` komennon:
+
 
 ### Lähteet:
 Tehtävän lähteet tähän
