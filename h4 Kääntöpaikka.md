@@ -89,19 +89,60 @@ Aloitin tehtävän kopioimalla passtr ohjelman Ghidraan. `main()` funktio löyty
 ## d) Crackme binääriin
 Latasin ensin kaikki tiedostot zippinä ja purin `unzip master.zip`. Tämän jälkeen ohjeen mukaan laitoin `make crackme01` ja sain tiedoston `crackme01.64`. Päätin purkaa kaikki kerralla joten ajoin pelkän `make` komennon:
 
+![image](https://github.com/user-attachments/assets/b1864981-37e4-43ab-baef-09d692453df5)
 
 ### Lähteet:
-Tehtävän lähteet tähän
+https://github.com/NoraCodes/crackmes
    
-## tehtävä4
+## e) Nora crackme01
+Aloitin ajamalla ohjelman tyhjällä syötteellä sekä `0000` syötteellä:
 
-### Lähteet:
-Tehtävän lähteet tähän
+![image](https://github.com/user-attachments/assets/d05c97fd-d5a9-4030-a5da-a88d99e3e992)
 
-## tehtävä5
+Tämän jälkeen kokeilin tuttua turvallista `strings` komentoa ja löysin tämän:
+![image](https://github.com/user-attachments/assets/9515b8dc-035f-4fcc-855e-86549f8b0c32)
 
-### Lähteet:
-Tehtävän lähteet tähän
+Kokeilin ajaa sitä ja sain tuloksen:
 
+![image](https://github.com/user-attachments/assets/7c70d400-d15c-44de-b7fe-e40ae9d108bb)
+
+Toimii.
+
+## e) Nora crackme01e
+Aloitin samalla taktiikalla ja löysin `strings` komennolla seuraavan:
+![image](https://github.com/user-attachments/assets/93dbb068-22c9-4f30-9462-40e20b87d69c)
+
+Lähdin kokeilemaan sitä:
+
+![image](https://github.com/user-attachments/assets/681f9487-f938-4a3a-95ac-c212542f5e1c)
+
+Avasin ohjelman Ghidralla. Etsin `main` funktion josta hahmottelin itselleni miten ohjelma toimii. Ohjelma on aika suoraviivainen. Koska syötettä verrataan merkkijonoon `slm!paas.k` oletan että se on oikea salasana. Se pitää vain syöttää tietyllä tavalla. 
+
+Päätin syöttää syötteen `\` avulla joka jättää huutomerkin huomioimatta:
+
+![image](https://github.com/user-attachments/assets/1bd32712-f053-4f24-acff-65e437e8d8d9)
+
+Nythän se siis toimi. 
+
+## e) Nora crackme02
+Tällä kertaa skippasin suoraan `strings` komennon sillä on ehkä parempi käyttää aika Ghidran ja koodin tulkintaan. Testasin ensin ohjelman toimintaa normaalisti tyhjällä syötteellä ja `0000` syötteellä:
+
+![image](https://github.com/user-attachments/assets/03b3462f-e522-46e5-af5c-5667316ac667)
+
+Seuraavana avasin ohjelman Ghidrassa ja aloin tutkailemaan pääfunktiota. Ensin vastaani tuli merkkijono `password1` jota testasin mutta se ei toiminut. Koodi oli hieman haasteellisemman näköistä kuin aiemmassa tehtävässä. Muokkailin koodia oman ymmärrykseni mukaan eri näköiseksi. En osaa selittää koodin toimintaa kauhean hyvin. Pohdin hävettävän kauan miten merkkijonosta vähennetään numeroita. Muistin että tunnilla puhuttiin aiemmin kirjainten ASCII arvoista. Lähdin siis selvittämään ASCII arvoja sanalle `password1` koska sen osia selvästi verrataan. 
+1. Ensin se tarkistaa että syötteitä on yksi
+2. Seuraavana se asettaa `expected` arvoksi `p`
+3. Otetaan syöte
+4. Verrataan sanan password-1 ja syötteen-1 ascii arvoja
+5. Arvojen täsmätessä tulostaa `Yes, is correct`
+
+Käytin verkosta löytyvää muuntajaa ensin `password1` ascii arvoihin ja vähensin yhden jokaisesta kirjaimesta ja käänsin takaisin. Sain seuraavan o`rrvnqc0 jota kokeilin. Sain kuitenkin vain aikaan tämän:
+![image](https://github.com/user-attachments/assets/a885c1f3-c33e-4c77-a2f7-9164c6bd37fc)
+
+Päättelin että erikoismerkki tekee taas temppuja ja käytin \ viivaa:
+
+![image](https://github.com/user-attachments/assets/a7e91c21-9e0e-4b7c-b11d-2859658ce5fe)
+
+Muissa tehtävissä en käyttänyt paljoa aikaa. Otin kuvan puhelimeeni koodista ja tuijottelin sitä metrossa, salilla sarjojen välissä tai ruokapöydässä. Tuotti paljon vaikeuksia tajuta mitä koodissa oikeasti tapahtuu. 
 ## Lähteet:
    Kaikki lähteet yhteen tähän
