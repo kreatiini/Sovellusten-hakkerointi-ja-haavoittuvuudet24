@@ -1,7 +1,7 @@
 # h4 Kääntöpaikka
 
 ## Tiivistelmä tehtävästä, tehtävänannot ja oman tietokoneen tiedot
-Tähän tulee tiivistelmä 
+Tehtävissä tuli ratkaista Crackme haasteita. Ensimmäiset pari olivat helppoja. Viimeinen ei niinkään. Käytin todella paljon aikaa koodin tutkimiseen enkä meinannut keksiä mitä koodissa tapahtuu tärkeimmässä kohdassa. En koe ymmärtäväni koko koodia siltikään kaikilta osin. Pitkän pohdinnan jälkeen sain oikean tuloksen joten olen tyytyväinen tämän viikon tehtäviin.  
 
 ### Tehtävänanto:
   
@@ -43,6 +43,16 @@ Tähän tulee tiivistelmä
 - Operating System: Debian GNU/Linux 12 (bookworm)  
 - Kernel: Linux 6.1.0-25-amd64
 
+## x) Tiivistelmä John Hammondin videosta GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat')
+- Videolla käänteismallinnetaan PicoCTF `Bbbbloat` haastetta
+- Käänteismallintamiseen käytetään Ghidraa
+- Videolla tutkitaan miten ohjelma liikkuu kohdasta kohtaan ja mitä se tekee eri kohdissa
+- `main` funktiossa on kohta joka vertaa syötettä heksadesimaaliin
+- Videolla John Hammond muuntaa heksadesimaalin desimaaliin ja saa ongelman ratkaistua
+- 
+
+### Lähteet:
+- Hammond, J. 27.4.2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat').  Katsottavissa: https://www.youtube.com/watch?v=oTD_ki86c9I. Katsottu: 17.11.2024.
 ## a) Asenna Ghidra
 Asensin Ghidran jo oppitunnilla:
 
@@ -50,7 +60,7 @@ Asensin Ghidran jo oppitunnilla:
 
 
 ### Lähteet:
-Tehtävän lähteet tähän
+- https://github.com/NationalSecurityAgency/ghidra
 
 ## b) rever-c
 Tehtävässä piti käänteismallintaa Ghidra C-kielelle ja selittää ohjelman toimintaa.
@@ -133,7 +143,7 @@ Seuraavana avasin ohjelman Ghidrassa ja aloin tutkailemaan pääfunktiota. Ensin
 1. Ensin se tarkistaa että syötteitä on yksi
 2. Seuraavana se asettaa `expected` arvoksi `p`
 3. Otetaan syöte
-4. Verrataan sanan password-1 ja syötteen-1 ascii arvoja
+4. Verrataan sanan password-1 ja syötteen-1 ascii arvoja. 
 5. Arvojen täsmätessä tulostaa `Yes, is correct`
 
 Käytin verkosta löytyvää muuntajaa ensin `password1` ascii arvoihin ja vähensin yhden jokaisesta kirjaimesta ja käänsin takaisin. Sain seuraavan o`rrvnqc0 jota kokeilin. Sain kuitenkin vain aikaan tämän:
@@ -143,6 +153,10 @@ Päättelin että erikoismerkki tekee taas temppuja ja käytin \ viivaa:
 
 ![image](https://github.com/user-attachments/assets/a7e91c21-9e0e-4b7c-b11d-2859658ce5fe)
 
-Muissa tehtävissä en käyttänyt paljoa aikaa. Otin kuvan puhelimeeni koodista ja tuijottelin sitä metrossa, salilla sarjojen välissä tai ruokapöydässä. Tuotti paljon vaikeuksia tajuta mitä koodissa oikeasti tapahtuu. 
+Muissa tehtävissä en käyttänyt paljoa aikaa. Otin kuvan puhelimeeni koodista ja tuijottelin sitä metrossa, salilla sarjojen välissä tai ruokapöydässä. Tuotti paljon vaikeuksia tajuta mitä koodissa oikeasti tapahtuu. Mahtava onnistumisen tunne kun keksin ratkaisun vaikka tehtävä olikin yksinkertaisimmasta päästä. 
+
+### Lähteet:
+- https://www.unit-conversion.info/texttools/ascii/
+
 ## Lähteet:
    Kaikki lähteet yhteen tähän
