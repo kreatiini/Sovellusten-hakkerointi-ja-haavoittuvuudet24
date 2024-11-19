@@ -30,6 +30,8 @@ Tehtävissä tuli ratkaista Crackme haasteita. Ensimmäiset pari olivat helppoja
   h) Vapaaehtoinen: Pyytämättäkin. Crackme02 on kaksi ratkaisua. Löydätkö molemmat?
     
   i) Vapaaehtoinen, hieman haastavampi: A ray. Nora crackme02e. Ratkaise binääri.
+
+- Iso-Anttila, Karvinen 2024: Application Hacking. Luettavissa: https://terokarvinen.com/application-hacking/ Luettu: 8.11.2024
   
 ### Tietokoneen tiedot: 
 - Näytönohjain: Asus GeForce RTX 3070 Ti ROG Strix - OC Edition
@@ -154,6 +156,12 @@ Ajattelin että erikoismerkki tekee taas temppuja ja käytin \ viivaa:
 ![image](https://github.com/user-attachments/assets/a7e91c21-9e0e-4b7c-b11d-2859658ce5fe)
 
 Muissa tehtävissä en käyttänyt paljoa aikaa. Otin kuvan puhelimeeni koodista ja tuijottelin sitä metrossa, salilla sarjojen välissä tai ruokapöydässä. Tuotti paljon vaikeuksia tajuta mitä koodissa oikeasti tapahtuu. Mahtava onnistumisen tunne kun keksin ratkaisun vaikka tehtävä olikin yksinkertaisimmasta päästä. 
+
+**Muokkaus 0743 19112024**
+- En ollut laittanut kuvaa crackme02.64 decompile koodista. En tallentanut projektia joten nimeämäni muuttujat eivät näy tässä.
+  
+  ![image](https://github.com/user-attachments/assets/28879012-3e82-411d-9142-bf3abf80e3f2)
+
 
 ### Lähteet:
 - https://www.unit-conversion.info/texttools/ascii/
