@@ -56,5 +56,7 @@ Ehkä ehdin myöhemmin tänään katsomaan uudestaan.
 Muutin tekstit ajettavaan muotoon ja aloin tutkailemaan. En kuitenkaan päässyt näissäkään mihinkään. Katsotaan saanko muutaman youtube videon jälkeen tehtävän tehtyä myöhemmin.
 
 
+**EDIT 23.52 25.11.2024** Jatkoin yrittämistä lab2 kanssa. Ei onnistunut mitenkään päin. Sain ulos "RIVATE" Joka ei varmaan liity mitenkään tehtävään vaan itse koodiin. 
+
 ## Lähteet:
   -  Tehtävät: Iso-Anttila, Karvinen 2024. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: [https://terokarvinen.com/palvelinten-hallinta/](https://terokarvinen.com/application-hacking/)
