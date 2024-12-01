@@ -49,27 +49,28 @@ Kävin läpi tiedostoja joissa oli tyylitietoja, itse dokumentin tekstisisältö
 
 ![image](https://github.com/user-attachments/assets/df10bd52-ce2a-4a87-83c8-854c95a391c2)
 
-En löytänyt tiedostoista mitään mielenkiintoista enkä keksinyt miten saisin tiedostosta word tiedoston avattavaan muotoon. 
+En löytänyt tiedostoista mitään mielenkiintoista enkä keksinyt miten saisin tiedoston takaisin oikeaan muoton jotta pystyisin tarkastella sitä. 
 
-## Tiivistelmä tehtävästä, tehtävänannot ja oman tietokoneen tiedot
-Tähän tulee tiivistelmä 
+Palasin tehtävään myöhemmin koska minua häiritsi kun tiesin kyseessä olevan word tiedosto. Löysin foorumista ohjeen pakata tiedostot uudestaan .zip tiedostoon. Tärkeää oli ettei pakkaa kansiota vaan yksittäiset tiedostot ja hakemistot erikseen.(harrymc 2014) Tämän jälkeen nimesin tiedoston `.docx` ja sain tiedoston auki libreofficella. Ajattelin että tiedosto on turvallista avata virtuaalikoneella netti pois päältä. Tietysti aina on riskinä että Lari on upottanut jotain office haavoittuvuutta hyväksikäyttävää koodia tiedostoon. 
 
-### Tehtävänanto:
-   Tähän tulee tehtävänanto
-  
-### Tietokoneen tiedot: 
-- Näytönohjain: Asus GeForce RTX 3070 Ti ROG Strix - OC Edition
-- Virtalähde: Corsair 750W SF Series SF750, modulaarinen SFX-virtalähde
-- Emolevy: Asus ROG STRIX B550-I GAMING, Mini-ITX -emolevy
-- Prosessori: AMD 5800x3D
-- RAM: Corsair 32GB (2 x 16GB) Vengeance LPX, DDR4 3600MHz, CL18,
-- SSD: Samsung 1TB 980 SSD-levy, M.2 2280, PCIe 3.0 x4, NVMe 1.4, sekä Kingston 1TB A2000 NVMe PCIe SSD-levy, M.2 2280, 2200/2000
-- Käyttöjärjestelmä: Edition	Windows 10 Pro Version	22H2
-- Virtuaaliympäristö: VirtualBox Version 7.0.14 r161095 (Qt5.15.2)
-- Operating System: Debian GNU/Linux 12 (bookworm)  
-- Kernel: Linux 6.1.0-25-amd64
+Itse dokumentista en löytänyt mitään erityisen mielenkiintoista, se on otsikoitu "50 Predictions for the Next 50 Years
+A Glimpse into the Future (2025-2075)". Kuvankaappaus ensimmäisestä sivusta:
 
-## tehtävä1
+![image](https://github.com/user-attachments/assets/13798aa7-7db8-40c4-a053-835ef11cc9a5)
+
+Innostuin kuitenkin perehtymään aiheeseen ja löysin nopealla googlauksella `oleid` nimisen työkalun. Työkalun avulla pystyy tarkistamaan sisältääkö tiedosto skriptejä ja muuta tietoa. Asensin sen ja ajoin läpi:
+
+![image](https://github.com/user-attachments/assets/fa5bc791-970a-45c3-b1e4-80cb7856e8f4)
+
+
+### Lähteet
+Binwalk man pages: https://manpages.org/binwalk 
+Harrymc 2023: How to Convert or repackage a folder back into docx. Luettavissa: https://superuser.com/questions/1784011/how-to-convert-or-repackage-a-folder-back-into-docx Luettu 1.12.2024
+deckalage 2019: Oleid: https://github.com/decalage2/oletools/wiki/oleid.
+
+
+## c) FOSS
+Valitsin tehtävään Home Assistant sovelluksen. 
 
 ### Lähteet:
 - Tehtävän lähteet tähän
